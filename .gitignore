@@ -1,0 +1,33 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+data/raw/
+data/processed/
+models/
+
+# 生成脚本的运行日志（PowerShell 写成 UTF-16，没有保存价值）
+*.log
+logs/
+
+# 人工审核表（含原文摘录，审完导回即可）
+data/review/
+
+# 评估运行的中间结果（召回、rerank 原始输出），报告另放 eval/reports/
+eval/runs/
+
+# 和 DeepSeek 的任务书 / 交付说明（协作记录，只留本地）
+docs/deepseek/
+
+# taste-skill 的工作文件：截图、模拟接口的打包；设计笔记和风格单保留
+.taste-skill/build-mock/
+.taste-skill/inspect*/
+
+# 只留本地、不发布：设计文档、简历和面试材料、Claude Code 配置
+docs/DESIGN.md
+docs/resume.md
+docs/interview_qa.md
+.claude/
